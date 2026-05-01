@@ -1,0 +1,33 @@
+# Packer
+crash.log
+crash.*.log
+*.box
+output-*/
+packer_cache/
+.packer.d/
+
+# Variables and secrets
+*.auto.pkrvars.hcl
+!example.auto.pkrvars.hcl
+*.tfvars
+*.tfvars.json
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+*.log
+
+# Terraform (if used with Packer)
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate*
+
+# Build artifacts
+*.tmp
